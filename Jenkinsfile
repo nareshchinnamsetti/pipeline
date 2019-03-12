@@ -1,19 +1,25 @@
 pipeline {
     agent any
-
     stages {
-        stage('setup') {
+        stage('Example Build') {
+      
             steps {
-                sh "mkdir -p deploy"
-            }
-        stage('nextStage') {
-            steps {
-                sh "touch jenk"
+                echo 'Hello, Maven'
+                
             }
         }
-        stage('anotherStage') {
+        stage('Git Clone') {
+      
             steps {
-                echo "repeat for all your shell steps"
+                echo 'Try adding git repo url here '
+                sh ' git repo url '
+                
+            }
+        }
+        stage('Example Test') {
+           
+            steps {
+                echo 'dfdghfgjghj'
             }
         }
     }
