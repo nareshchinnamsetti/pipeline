@@ -12,7 +12,7 @@ pipeline {
       
             steps {
                 echo 'Try adding git repo url here '
-                sh ' mkdir test'
+                
                 
             }
         }
