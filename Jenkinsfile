@@ -9,11 +9,11 @@ pipeline {
                 
             }
         }
-        stage('Git Clone') {
+        stage('Terrafrom version') {
       
             steps {
                 echo 'Try adding git repo url here '
-                
+                sh 'terraform --version'
                 
             }
         }
