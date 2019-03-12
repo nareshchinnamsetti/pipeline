@@ -4,7 +4,8 @@ pipeline {
         stage('Example Build') {
       
             steps {
-                touch 'filename'
+                echo 'create file filename'
+                sh 'touch filename'
                 
             }
         }
