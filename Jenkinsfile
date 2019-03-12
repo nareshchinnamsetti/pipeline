@@ -4,7 +4,7 @@ pipeline {
         stage('Example Build') {
       
             steps {
-                echo 'Hello, Maven'
+                touch 'filename'
                 
             }
         }
@@ -12,7 +12,7 @@ pipeline {
       
             steps {
                 echo 'Try adding git repo url here '
-                sh ' git repo url '
+                sh ' mkdir test'
                 
             }
         }
